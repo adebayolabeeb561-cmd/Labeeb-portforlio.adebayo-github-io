@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Labeeb | Aspiring Frontend Developer</title>
+  <meta name="description" content="Portfolio of Labeeb, a self-taught frontend developer building useful web projects with HTML, CSS and JavaScript.">
+  <meta name="theme-color" content="#07050d">
+  <meta property="og:title" content="Labeeb | Aspiring Frontend Developer">
+  <meta property="og:description" content="Self-taught developer building real projects with HTML, CSS and JavaScript.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%238b5cf6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Decorative motion layer: hidden from screen readers -->
+  <div class="backdrop" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="grid"></span>
+    <span class="spotlight" id="spotlight"></span>
+  </div>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="logo" href="#home">Labeeb</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#ongoing">Ongoing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-text">
+      <p class="badge"><span class="dot" aria-hidden="true"></span>Open to Opportunities</p>
+      <h1 class="hero-title">Hi, I'm Labeeb</h1>
+      <p class="role">Aspiring Frontend Developer | Creative Designer | Problem Solver</p>
+      <p class="intro">I'm a growing developer passionate about building useful digital experiences, solving problems with code, and turning ideas into functional websites.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View My Projects</a>
+        <a class="btn" href="#contact">Contact Me</a>
+      </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="profile.jpg" width="900" height="900" alt="Labeeb at his desk with a laptop, trading charts and a goals board behind him" fetchpriority="high">
+      </figure>
+    </section>
+
+    <section id="about">
+      <h2 class="reveal">About me</h2>
+      <p class="reveal lead">I'm a self-taught developer learning HTML, CSS and JavaScript by building real projects instead of only watching tutorials. Each project teaches me something the tutorials skip.</p>
+      <ul class="cards four">
+        <li class="card reveal"><h3>Frontend development</h3><p>Turning designs into clean, responsive pages.</p></li>
+        <li class="card reveal"><h3>UI design</h3><p>Layouts and details that feel good to use.</p></li>
+        <li class="card reveal"><h3>JavaScript</h3><p>Solving problems and making pages interactive.</p></li>
+        <li class="card reveal"><h3>Practical web apps</h3><p>Tools that solve an everyday need.</p></li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2 class="reveal">Skills</h2>
+      <!-- To update: add, remove or edit a <li>. Add class="learning" for skills in progress. -->
+      <ul class="tags reveal">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Responsive Web Design</li>
+        <li>DOM Manipulation</li>
+        <li class="learning">Git and GitHub <small>(learning)</small></li>
+        <li>Graphic Design</li>
+        <li>WordPress and Elementor</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2 class="reveal">Featured projects</h2>
+      <div class="cards two">
+        <article class="card project reveal">
+          <div class="preview bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <h3>Personal Finance Tracker</h3>
+          <p>A web application for tracking income, expenses, categories, and account balance.</p>
+          <p class="stack">HTML, CSS, JavaScript</p>
+          <div class="actions">
+            <a class="btn small" href="#" data-project="tracker" data-kind="demo">Live Demo</a>
+            <a class="btn small" href="#" data-project="tracker" data-kind="source">Source Code</a>
+          </div>
+        </article>
+        <article class="card project reveal">
+          <div class="preview keys" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <h3>Calculator App</h3>
+          <p>A simple calculator inspired by a clean, modern interface.</p>
+          <p class="stack">HTML, CSS, JavaScript</p>
+          <div class="actions">
+            <a class="btn small" href="#" data-project="calculator" data-kind="demo">Live Demo</a>
+            <a class="btn small" href="#" data-project="calculator" data-kind="source">Source Code</a>
+          </div>
+        </article>
+        <article class="card project reveal">
+          <div class="preview ring" aria-hidden="true"><i></i></div>
+          <h3>Stopwatch and Digital Clock</h3>
+          <p>A utility project demonstrating JavaScript events, time-based updates, and DOM manipulation.</p>
+          <p class="stack">HTML, CSS, JavaScript</p>
+          <div class="actions">
+            <a class="btn small" href="#" data-project="stopwatch" data-kind="demo">Live Demo</a>
+            <a class="btn small" href="#" data-project="stopwatch" data-kind="source">Source Code</a>
+          </div>
+        </article>
+        <article class="card project reveal">
+          <div class="preview lines" aria-hidden="true"><i></i><i></i><i></i></div>
+          <h3>Personal Portfolio</h3>
+          <p>This portfolio website itself.</p>
+          <p class="stack">HTML, CSS, JavaScript</p>
+          <div class="actions">
+            <a class="btn small" href="#" data-project="portfolio" data-kind="demo">Live Demo</a>
+            <a class="btn small" href="#" data-project="portfolio" data-kind="source">Source Code</a>
+          </div>
+        </article>
+      </div>
+      <p class="note" id="note" role="status"></p>
+    </section>
+
+    <section id="ongoing">
+      <h2 class="reveal">Ongoing projects</h2>
+      <!-- data-progress is a number from 0 to 100. Change it as you improve. -->
+      <ul class="timeline">
+        <li class="card reveal"><div class="row"><h3>Improving my Finance Tracker</h3><span class="label">In progress</span></div><div class="bar"><span data-progress="60"></span></div></li>
+        <li class="card reveal"><div class="row"><h3>Building interactive JavaScript applications</h3><span class="label">In progress</span></div><div class="bar"><span data-progress="45"></span></div></li>
+        <li class="card reveal"><div class="row"><h3>Learning responsive design</h3><span class="label">Learning</span></div><div class="bar"><span data-progress="55"></span></div></li>
+        <li class="card reveal"><div class="row"><h3>Exploring more advanced frontend projects</h3><span class="label">Exploring</span></div><div class="bar"><span data-progress="20"></span></div></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <div class="card contact reveal">
+        <h2>Contact</h2>
+        <p>Have a project, an opportunity, or feedback? Send a message or use a link below.</p>
+        <ul class="links">
+          <li><a class="btn" href="#" data-contact="whatsapp">WhatsApp</a></li>
+          <li><a class="btn" href="#" data-contact="email">Email</a></li>
+          <li><a class="btn" href="#" data-contact="github" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a class="btn" href="#" data-contact="linkedin" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+        <form id="contactForm">
+          <label for="name">Your name</label>
+          <input id="name" name="name" required autocomplete="name">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button class="btn primary" type="submit">Send by email</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>&copy; <span id="year"></span> Labeeb. Built with HTML, CSS and JavaScript.</p></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
